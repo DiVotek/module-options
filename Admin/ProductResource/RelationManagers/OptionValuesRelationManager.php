@@ -31,6 +31,7 @@ class OptionValuesRelationManager extends RelationManager
             ->recordTitleAttribute('name')
             ->columns([
                 Tables\Columns\TextColumn::make('name'),
+                Tables\Columns\TextColumn::make('option.name'),
                 Tables\Columns\TextColumn::make('sign'),
                 TableSchema::getPrice(),
             ])
